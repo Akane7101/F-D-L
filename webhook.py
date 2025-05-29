@@ -31,104 +31,104 @@ def topLogin(data: list) -> None:
         "content": None,
         "embeds": [
             {
-                "title": "FGO登录系统 - " + main.fate_region,
-                "description": f"登录成功。列出角色信息.\n\n{messageBonus}",
+                "title": "عبد تسجيل الدخول- " + main.fate_region,
+                "description": f"عووووك جلا افتحوا الشغل شوفونا",
                 "color": 563455,
                 "fields": [
                     {
-                        "name": "御主名",
+                        "name": "اسم الكريم",
                         "value": f"{name1}",
                         "inline": True
                     },
                     {
-                        "name": "朋友ID",
+                        "name": "الايدي",
                         "value": f"{fpids1}",
                         "inline": True
                     },
                     {
-                        "name": "等级",
+                        "name": "اللفل",
                         "value": f"{rewards.level}",
                         "inline": True
                     },
                     {
-                        "name": "呼符", 
+                        "name": "التكتس", 
                         "value": f"{rewards.ticket}",
                         "inline": True
                     },                    
                     {
-                        "name": "圣晶石",
+                        "name": "الكوارتز",
                         "value": f"{rewards.stone}",
                         "inline": True
                     },
                     {
-                        "name": "圣晶片",
+                        "name": "مكعبات الكوارتز الصغيرة ديك",
                         "value": f"{rewards.sqf01}",
                         "inline": True
                     },
                     {
-                        "name": "金苹果",
+                        "name": "التفاح الذهبي",
                         "value": f"{rewards.goldenfruit}",
                         "inline": True
                     },
                     {
-                        "name": "银苹果",
+                        "name": "التفاح الفضي",
                         "value": f"{rewards.silverfruit}",
                         "inline": True
                     },
                     {
-                        "name": "铜苹果",
+                        "name": "التفاح البرونزي",
                         "value": f"{rewards.bronzefruit}",
                         "inline": True
                     },
                     {
-                        "name": "蓝苹果",
+                        "name": "التفاح الازرق",
                         "value": f"{rewards.bluebronzefruit}",
                         "inline": True
                     },
                     {
-                        "name": "蓝苹果树苗",
+                        "name": "الاصايص حقت التفاح الازرق ديك",
                         "value": f"{rewards.bluebronzesapling}",
                         "inline": True
                     },
                     {
-                        "name": "连续登录天数",
+                        "name": "ايام اللوقن المتتالية",
                         "value": f"{login.login_days}",
                         "inline": True
                     },
                     {
-                        "name": "累计登录天数",
+                        "name": "ايام اللوقن عموما",
                         "value": f"{login.total_days}",
                         "inline": True
                     },
                     {
-                        "name": "白方块",
+                        "name": "بريزم الحيوانات المنوية",
                         "value": f"{rewards.pureprism}",
                         "inline": True
                     },
                     {
-                        "name": "友情点",
+                        "name": "نقاط الهوميز",
                         "value": f"{login.total_fp}",
                         "inline": True
                     },
                     {
-                        "name": "今天 获得的友情点",
+                        "name": "نقاط الهوميز الجاتك هسي",
                         "value": f"+{login.add_fp}",
                         "inline": True
                     },
                     {
-                        "name": "当前AP",
+                        "name": "الap",
                         "value": f"{login.remaining_ap}",
                         "inline": True
                     },
                     {
-                        "name": "圣杯",
+                        "name": "الكؤوس",
                         "value": f"{rewards.holygrail}",
                         "inline": True
                     },
                     
                 ],
                 "thumbnail": {
-                    "url": "https://www.fate-go.jp/manga_fgo/images/commnet_chara01.png"
+                    "url": "https://pm1.aminoapps.com/7072/a49be30f020ee38f9d3aaf3c916a3595e58b331dr1-1098-1022v2_hq.jpg"
                 }
             }
         ],
@@ -305,7 +305,6 @@ def Present(name, namegift, object_id_count) -> None:
     }
 
     requests.post(endpoint, json=jsonData, headers=headers)
-
 
 
 
